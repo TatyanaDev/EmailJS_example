@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="./assets/js/main.js" defer></script>
+    <title>mail_test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper_cards">
+        <div class="card">
+          <img
+            src="./assets/images/roses.jpg"
+            alt="Красные розы в шляпной коробке"
+          />
+          <p>Красные розы в шляпной коробке</p>
+          <button
+            data_value="Красные розы в шляпной коробке"
+            href="#exampleModalToggle"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/images/chamomile.jpg"
+            alt="Крупные ромашки в букете"
+          />
+          <p>Крупные ромашки в букете</p>
+          <button
+            data_value="Крупные ромашки в букете"
+            href="#exampleModalToggle"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+      </div>
+
+      <div class="wrapper_cards">
+        <div class="card">
+          <img
+            src="./assets/images/hydrangea.jpg"
+            alt="Букет из фиолетовых гортензий"
+          />
+          <p>Букет из фиолетовых гортензий</p>
+          <button
+            data_value="Букет из фиолетовых гортензий"
+            href="#exampleModalToggle"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/images/chrysanthemums.jpg"
+            alt="Розовые хризантемы в букете"
+          />
+          <p>Розовые хризантемы в букете</p>
+          <button
+            data_value="Розовые хризантемы в букете"
+            href="#exampleModalToggle"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+      </div>
+
+      <div class="wrapper_cards">
+        <div class="card">
+          <img
+            src="./assets/images/peonies.jpg"
+            alt="Нежный букет из голландских пионов"
+          />
+          <p>Нежный букет из голландских пионов</p>
+          <button
+            data_value="Нежный букет из голландских пионов"
+            href="#exampleModalToggle"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/images/orchids_and_roses.jpg"
+            alt="Букет с орхидеями и розами"
+          />
+          <p>Букет с орхидеями и розами</p>
+          <button
+            data_value="Букет с орхидеями и розами"
+            href="#exampleModalToggle"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+      </div>
+
+      <div class="wrapper_cards">
+        <div class="card">
+          <img src="./assets/images/lilac.jpg" alt="Букет сирени в корзинке" />
+          <p>Букет сирени в корзинке</p>
+          <button
+            data_value="Букет сирени в корзинке"
+            href="#exampleModalToggle"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/images/lilies.jpg" alt="Букет лилий" />
+          <p>Букет лилий</p>
+          <button
+            href="#exampleModalToggle"
+            data_value="Букет лилий"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+          >
+            Купить
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="exampleModalToggle"
+      aria-hidden="true"
+      class="modal fade"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              class="btn-close"
+              type="button"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="form">
+              <div class="mb-3">
+                <label for="goods" class="form-label">Ваш товар:</label>
+                <input
+                  class="goods form-control"
+                  name="goods"
+                  type="text"
+                  readonly
+                />
+              </div>
+              <div class="mb-3">
+                <label for="user_name" class="form-label">* Ваше имя:</label>
+                <input
+                  class="form-control name-check"
+                  name="user_name"
+                  type="text"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="phone_number" class="form-label"
+                  >* Ваш номер:</label
+                >
+                <input
+                  class="form-control number-check"
+                  name="phone_number"
+                  type="tel"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="comment" class="form-label"
+                  >Комментарий к заказу (не обязательно):</label
+                >
+                <textarea
+                  class="form-control textarea"
+                  name="comment"
+                  type="text"
+                ></textarea>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  class="confirmationOrder btn btn-success"
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                  type="submit"
+                  disabled
+                >
+                  Подтвердить заказ
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      class="modal fade"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            Спасибо, ваша заявка принята! Мы свяжемся с вами в ближайшее время
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              type="button"
+            >
+              Вернуться на сайт
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
